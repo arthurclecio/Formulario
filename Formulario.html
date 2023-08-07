@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Inscrição</title>
+  <style>
+    body {
+background-color: dimgray;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #fff;
+      text-align: center;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .error {
+      color: red;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulário de Inscrição</h1>
+  <form id="registrationForm" onsubmit="return validateForm()">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name">
+    <span id="nameError" class="error"></span>
+
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email">
+    <span id="emailError" class="error"></span>
+
+    <label for="age">Idade:</label>
+    <input type="number" id="age" name="age">
+    <span id="ageError" class="error"></span>
+
+    <center>
+      <button type="submit">Enviar</button>
+    </center>
+  </form>
+
+  <script>
+    // O seu código JavaScript continua aqui...
+  </script>
+</body>
+</html>
